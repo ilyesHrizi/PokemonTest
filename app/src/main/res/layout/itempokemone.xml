@@ -1,0 +1,89 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transactionCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <TextView
+            android:id="@+id/pokemone_name"
+            android:layout_width="102dp"
+            android:layout_height="37dp"
+
+            android:layout_marginStart="56dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.248"
+            tools:text="Title One" />
+
+        <TextView
+            android:id="@+id/pokemone_evolvedfrom"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="32dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toEndOf="@+id/pokemone_name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Description ONE" />
+
+        <TextView
+            android:id="@+id/pokemone_reason"
+            android:layout_width="104dp"
+            android:layout_height="40dp"
+
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="28dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@android:color/holo_blue_bright"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/pokemone_xdescription"
+            app:layout_constraintTop_toBottomOf="@+id/pokemone_evolvedfrom"
+            app:layout_constraintVertical_bias="0.058"
+            tools:text="$12" />
+
+        <TextView
+            android:id="@+id/pokemone_xdescription"
+            android:layout_width="107dp"
+            android:layout_height="42dp"
+
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/pokemone_name"
+            app:layout_constraintVertical_bias="0.27"
+            tools:text="Today" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="88dp"
+            android:layout_height="67dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
